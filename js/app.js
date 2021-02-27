@@ -37,7 +37,7 @@ abrirModal.addEventListener('click', () => {
 })
 
 cerrarModal.addEventListener('click', () => {
-    modal.classList.remove('abrir-modal')
+    modal.style.top = '-360%'
     body.classList.remove('black')
 })
 

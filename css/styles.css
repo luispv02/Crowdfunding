@@ -7,7 +7,7 @@
 body{
     font-family: 'Commissioner', sans-serif;
     font-size: 16px;
-    background:#FAFAFA;
+    background:#f0f0f0;
     height: 100%;
 }
 
@@ -182,6 +182,11 @@ section .content-section-one .text-section-one .button-section-one button{
     font-weight: 600;
 
     cursor:pointer;
+}
+
+
+section .content-section-one .text-section-one .button-section-one  label{
+    display: none;
 }
 
 /* SECTION-TWO */
@@ -666,4 +671,289 @@ section .content-section-one .text-section-one .button-section-one button{
     color: white;
     font-size: 17px;
     font-weight: 600px;
+}
+
+/* MEDIAQUERYS */
+@media (min-width:1024px){
+
+    .content{
+        width: 60%;
+        mar
+    }
+
+    .inf-principal{
+        margin-top: -70px;
+    }
+
+    /* HEADER */
+    header{
+        background-image: url(../images/image-hero-desktop.jpg);
+    }
+
+    header::before{
+        content: '';
+        width: 100%;
+        height: 340px;
+        background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.384) 100%);
+        position: absolute;
+    }
+
+    /* MAIN - HAMBURGER */
+    header .header-content{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    header .header-content .main{
+        margin: 0;
+    }
+
+    header .header-content .main ul{
+        position: initial;
+        background:none;
+        flex-direction: row;
+    }
+
+    header .header-content .main ul li{
+        border-bottom:none;
+        margin-right: 20px;
+    }
+
+    header .header-content .main ul li a{
+        color: white;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    header .header-content .main ul li:nth-child(1),
+    header .header-content .main ul li:nth-child(2){
+    border-bottom: 0;
+}   
+
+    .hamburger{
+        display: none;
+    }
+
+    /* SECTION - ONE */
+    section .content-section-one .text-section-one .button-section-one{
+        justify-content: space-between;
+    }
+
+    section .content-section-one .text-section-one .button-section-one label{
+        display: block;
+    }
+
+    section .content-section-one .text-section-one .button-section-one button{
+        width: 38%;
+        padding: 19px;
+    }
+
+
+    section .content-section-one .text-section-one .button-section-one button:focus{
+        background:#157A74;
+        color: white;
+        outline: none;
+    }
+
+    section .content-section-one .text-section-one .button-section-one span{
+        width: 200px;
+        height: auto;
+        background:#F4F8F9;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+   
+    section .content-section-one .text-section-one .button-section-one label{
+        position: absolute;
+        right: 63px;
+        font-size: 18px;
+        color: #5d5d5d;
+        font-weight: 600;
+    }
+
+    section .content-section-one .text-section-one .button-section-one label:hover{
+        color: #157A74;
+    }
+
+
+    section .content-section-one .text-section-one .button-section-one img{
+        margin-right: 180px;
+        
+    }
+
+    section .content-section-one .text-section-one .button-section-one img:hover{
+        
+    }
+
+    /* SECTION - TWO */
+    .section-two .content-section-two{
+        padding:35px 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .section-two .content-section-two .one,
+    .section-two .content-section-two .two{
+        padding-right: 60px;
+        margin-right: 60px;
+        border-right: 1px solid #adadad69;
+        height: 56px;
+    }
+
+    .section-two .one:before, .section-two .two:before{
+        display: none;
+    }
+
+    /* SECTION - THREE */
+    .section-three .content-section-three{
+        padding: 0 25px;
+    }
+
+    .section-three .content-section-three .border h2{
+        font-size: 17px;
+    }
+
+    .section-three .content-section-three .section-three-one,
+    .section-three .content-section-three .section-three-two,
+    .section-three .content-section-three .section-three-end{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .section-three .content-section-three .section-three-one button,
+    .section-three .content-section-three .section-three-two button,
+    .section-three .content-section-three .section-three-end button{
+        padding: 10px 50px
+        
+    }    
+
+    .section-three .content-section-three .section-three-one button.hover:focus,
+    .section-three .content-section-three .section-three-two button.hover:focus{
+        background:#157A74;
+        outline:none;
+    }
+
+    /* MODAL */
+
+    .modal .modal-container .modal-top p.close{
+        margin-left: 80px;
+    }
+
+
+    .modal .modal-container .modal-igual{
+        height: auto;
+        position: relative;
+       
+    }
+
+    .modal .modal-container .modal-igual h2{
+        position: absolute;
+        top: 67px;
+    }
+
+    .modal .modal-container .modal-igual h2:hover,
+    .modal .modal-container .modal-one h2:hover,
+    .modal .modal-container .modal-four h2.end:hover{
+        color: #63B1AF;
+    }
+
+    .modal .modal-container .modal-two p.price{
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .modal .modal-container .modal-igual p.price{
+        position: absolute;
+        top: 24px;
+        left: 158px;
+    }
+
+    .modal .modal-container .modal-igual  p.info{
+        margin-left: 38px;
+    }
+
+    .modal .modal-container .modal-igual p.price-fin{
+        position: absolute;
+        top: 28px;
+        right: 24px;
+    }
+
+    .modal .modal-container .modal-four{
+        position: relative;
+    }
+
+    .modal .modal-container .modal-four h2.end{
+        position: absolute;
+        top: 42px;
+        left: 44px;
+    }
+
+    .modal .modal-container .modal-four p.price-end{
+        position: absolute;
+        left: 210px;
+        top: 34px;
+    }
+
+    .modal .modal-container .modal-four p.info-end{
+        margin-left: 38px;
+    }
+
+    .modal .modal-container .modal-four p.price-fin{
+        position: absolute;
+        top: 19px;
+        right: 24px;
+    }
+
+    /* MODAL - SELECCION - BOTON CONTINUE */
+
+    .modal .modal-container .modal-igual .radio-select .content-select{
+        display: flex;
+        align-items: center;
+    }
+
+    .modal .modal-container .modal-igual .radio-select .content-select p{
+        margin-bottom: 0;
+        width: 200px;
+        font-weight: normal;
+        font-size: 17px;
+    }
+
+    .modal .modal-container .modal-igual .radio-select .content-select .radio-flex{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .modal .modal-container .modal-igual .radio-select .content-select input{
+        margin-right: 20px;
+        
+    }
+
+    .modal .modal-container .modal-igual .radio-select .content-select label.pesos{
+        position: absolute;
+        right: 196px;
+    }
+
+    .modal .modal-container .modal-igual .radio-select .content-select button.continue:hover{
+        background:#0F7C75 ;
+    }
+
+    /* MODAL - FINAL */
+    .modal-final{
+        width: 40%;
+        
+    }
+
+    .modal-final .content-modal-final{
+        padding: 45px 30px 35px 45px
+    }
+
+    .modal-final .content-modal-final p{
+        line-height: 25px;
+    }
+    
 }
